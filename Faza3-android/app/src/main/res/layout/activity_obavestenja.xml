@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/pozadina"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shape"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="117dp"
+                android:layout_height="98dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/logo"></ImageView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <TableRow android:layout_gravity="center">
+                    <TextView android:textAlignment="center"
+                        android:text="Obaveštenja"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="20sp">
+                    </TextView>
+                </TableRow>
+                <TableRow android:layout_gravity="center">
+                    <TextView android:textAlignment="center"
+                        android:id="@+id/nema"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="20sp">
+                    </TextView>
+                </TableRow>
+            </TableLayout>
+
+            <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView">
+            </ListView>
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<div class="container-fluid pozadina">
+    <div class="row main">
+        <div class="col-lg-3"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 prijava">
+            <div class="form-container">
+                <div class="form-content">
+                    <div class="login-form-header">
+                        <div class="logo">
+                            <a routerLink="/pocetna"><img src="assets/logo.png" width="160" height="110"></a>
+                        </div>
+                    </div>
+        
+                    <div class="form-body">
+                        <div style="text-align: center;">
+                            <label style="color:black; font-weight: bold; font-size: 25px; margin-bottom: 30px;"> Moj profil </label> 
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type='text' placeholder="Ime" class="form-input" [(ngModel)]='ime'>
+                                </td>
+                                <td style="padding-left: 5px;"> <input type='text' placeholder="Prezime" class="form-input" [(ngModel)]='prezime'></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type='text' placeholder="Korisničko ime" class="form-input" [(ngModel)]='korIme'>
+                                </td>
+                                <td style="padding-left: 5px;">
+                                    <input type='text' placeholder="Telefon(xxx-xxx-xxx(x))" class="form-input" [(ngModel)]='telefon'>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type='text' placeholder="Adresa" class="form-inputL" [(ngModel)]='adresa'>
+                                </td>
+                                <td style="padding-left: 5px;">
+                                    <input type='text' placeholder="E-mail" class="form-inputL" [(ngModel)]='email'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span class="greska">{{poruka}}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button class="btn" (click)='izmeniInf()' style="margin-bottom: 3px;"> 
+                                   Izmeni informacije 
+                                </button></td>
+                            </tr>
+                            <tr *ngIf = 'uspesno'>
+                                <td colspan="2">
+                                    <div class="link">
+                                        Informacije uspešno promenjene!
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="password"  placeholder="Stara lozinka" class="form-input" [(ngModel)]='staraLoz' style="margin-top: 20px;">
+                                </td>
+                                <td style="padding-left: 5px;">
+                                    <input type="password"  placeholder="Nova lozinka" class="form-input" [(ngModel)]='novaLoz' style="margin-top: 20px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="password"  placeholder="Potvrda lozinke" class="form-inputL" [(ngModel)]='potvrdaLoz'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span class="greska">{{porukaLoz}}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button class="btn" (click)='promeniLoz()'> 
+                                    Promeni lozinku 
+                                </button></td>
+                            </tr>
+                            <tr *ngIf = 'uspesnoLoz'>
+                                <td colspan="2">
+                                    <div class="link">
+                                        Lozinka uspešno promenjena! 
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                        <div style="text-align: center; margin-top: 20px;">
+                            <label style="color: rgb(0, 0, 0);">&#8592; &nbsp;</label> <a routerLink="/pocetna" style="font-size: 14px; text-decoration: underline; color: black;">Vrati se nazad</a>
+                        </div>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="col-lg-3"></div> 
+    </div>
+</div>

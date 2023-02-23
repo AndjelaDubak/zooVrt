@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/pozadina"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shape"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="117dp"
+                android:layout_height="98dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/logo"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="Dobrodošli u zoološki vrt Pandica!"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:text="Ukoliko niste naš korisnik, registrujte se i pogledajte sve životinje koje postoje kod nas."
+                android:textAlignment="center"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold"></TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:insetTop="0dp"
+                android:text="Prijava"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:backgroundTint="#5F603A"
+                android:onClick="prijava"></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:insetTop="0dp"
+                android:text="Registracija"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:backgroundTint="#5F603A"
+                android:onClick="registracija"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

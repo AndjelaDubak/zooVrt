@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white_opacity">#99FFFFFF</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_200">#FF6200E4</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_green">#323223</color>
+    <color name="button_dark_green">#5F603A</color>
+    <color name="grey_input">#494949</color>
+    <color name="poruka">#B64000</color>
+    <color name="black_opacity">#40000000</color>
+    <color name="green_opacity">#505F603A</color>
+    <color name="orange">#FFD49E51</color>
+    <color name="light_green">#FF9C9D4E</color>
+    <color name="light">#FFDFDDCF</color>
+    <color name="dark_orange">#FF59300D</color>
+    <color name="light_orange">#FFD49E51</color>
+    <color name="light_green_opacity">#609C9D4E</color>
+    <color name="komentar">#60222222</color>
+    <color name="input">#60F8F5E5</color>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/pozadina"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shape"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="117dp"
+                android:layout_height="98dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/logo"></ImageView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <TableRow android:layout_gravity="center">
+
+                    <EditText
+                        android:id="@+id/ime"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:hint="Ime"
+                        android:textColor="@color/grey_input"
+                        android:textSize="15sp"></EditText>
+
+                    <EditText
+                        android:id="@+id/prezime"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Prezime"
+                        android:textColor="@color/grey_input"
+                        android:textSize="15sp"
+                        android:layout_weight="1"></EditText>
+
+                </TableRow>
+                <TableRow android:layout_gravity="center">
+
+                    <EditText
+                        android:id="@+id/korIme"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:hint="Korisničko ime"
+                        android:textColor="@color/grey_input"
+                        android:textSize="15sp"></EditText>
+
+                    <EditText
+                        android:id="@+id/telefon"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Telefon"
+                        android:textColor="@color/grey_input"
+                        android:textSize="15sp"
+                        android:layout_weight="1"></EditText>
+
+                </TableRow>
+                <TableRow android:layout_gravity="center">
+
+                    <EditText
+                        android:id="@+id/adresa"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:hint="Adresa"
+                        android:textColor="@color/grey_input"
+                        android:textSize="15sp"></EditText>
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Email"
+                        android:textColor="@color/grey_input"
+                        android:textSize="15sp"
+                        android:layout_weight="1"></EditText>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/poruka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/poruka"
+                ></TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetTop="0dp"
+                android:text="Izmeni informacije"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:backgroundTint="#5F603A"
+                android:onClick="izmeniInformacije"></Button>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <TableRow android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:paddingRight="2dp"></TextView>
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <EditText
+                        android:id="@+id/staraLoz"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/grey_input"
+                        android:textSize="15sp"
+                        android:inputType="textPassword"
+                        android:hint="Stara lozinka"></EditText>
+
+                    <EditText
+                        android:id="@+id/novaLoz"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/grey_input"
+                        android:textSize="15sp"
+                        android:inputType="textPassword"
+                        android:hint="Nova lozinka"></EditText>
+
+                </TableRow>
+                <TableRow>
+                    <EditText
+                        android:id="@+id/potvrdaLoz"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/grey_input"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:inputType="textPassword"
+                        android:hint="Potvrda lozinke"></EditText>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:id="@+id/poruka1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/poruka"
+                ></TextView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetTop="0dp"
+                android:text="Izmeni lozinku"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:backgroundTint="#5F603A"
+                android:onClick="izmeniLozinku"></Button>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <TableRow android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/lozinkaIzmenjena"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:paddingRight="2dp"></TextView>
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

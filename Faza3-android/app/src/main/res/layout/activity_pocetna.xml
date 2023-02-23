@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/poz"
+        android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableRow
+            android:background="@color/black_opacity"
+            android:padding="11dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Obaveštenja"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:onClick="obavestenjaPocetna"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Moj profil"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:onClick="profilPocetna"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Odjavi se"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:onClick="odjavaPocetna"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="@color/green_opacity"
+            android:paddingTop="10dp"
+            android:paddingBottom="6dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Početna"
+                    android:textColor="@color/orange"
+                    android:textSize="15sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paketi"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:onClick="paketiPocetna"></TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo"></ImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Životinje"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:onClick="zivotinjePocetna"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Događaji"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:onClick="dogadjajiPocetna"></TextView>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+
+        </TableRow>
+    </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="417dp"
+            android:background="@drawable/crevna"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:background="@drawable/lavmajmun">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:layout_weight="6"></TextView>
+                <LinearLayout android:layout_weight="3"
+                    android:background="@color/light"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Šta se dešava kod nas?"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_orange"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dogadjaji"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_orange"
+                        android:textSize="11dp"
+                        android:onClick="dogadjajiPocetna"></TextView>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="3"></TextView>
+                <LinearLayout android:layout_weight="3"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Naše životinje"
+                        android:textAlignment="center"
+                        android:textColor="@color/light_orange"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:layout_marginBottom="11dp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="U našem zoo vrtu postoje razne životinje!"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:layout_marginBottom="10dp"></TextView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:insetTop="0dp"
+                        android:text="Vidi sve"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        app:backgroundTint="#9C9D4E"
+                        android:onClick="vidiSve"
+                        android:gravity="center"></Button>
+                </LinearLayout>
+                <TextView android:layout_weight="3"></TextView>
+            </TableRow>
+
+            <TableRow android:layout_width="350dp">
+
+                <TextView android:layout_weight="3"></TextView>
+
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="270dp"
+                        android:layout_height="95dp"
+                        android:src="@drawable/tigar"
+                        android:layout_gravity="center"></ImageView>
+
+                    <ImageView
+                        android:layout_width="270dp"
+                        android:layout_height="95dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dodaj"></ImageView>
+                </LinearLayout>
+
+                <TextView android:layout_weight="3"></TextView>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black_opacity"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INFORMACIJE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:layout_marginBottom="10dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ulaznice možete kupiti onlajn putem."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="e-mail kontakt za opšte informacije: info.rs@zoopandica.eu"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="kontakt telefon: +381 61 111 451"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Knez Mihailova 59"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10dp"></TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

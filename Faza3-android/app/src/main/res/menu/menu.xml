@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Obaveštenja" android:id="@+id/obavestenja"></item>
+    <item android:title="Moj profil" android:id="@+id/profil"></item>
+    <item android:title="Početna" android:id="@+id/pocetna"></item>
+    <item android:title="Životinje" android:id="@+id/zivotinje"></item>
+    <item android:title="Paketi" android:id="@+id/paketi"></item>
+    <item android:title="Događaji" android:id="@+id/dogadjaji"></item>
+    <item android:title="Odjavi se" android:id="@+id/odjava"></item>
+</menu>

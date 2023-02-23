@@ -1,0 +1,144 @@
+.container-fluid{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.row{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.col-sm-12 {
+    margin: 0;
+    padding: 0;
+}
+
+.pozadina{
+    background-image: url(/assets/pozadina.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+}
+
+.poz {
+    background-image: url(/assets/pozadina.jpg);
+    background-size:cover;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(95,96,58,0.5);
+    margin: 0;
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pocZiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.pakDog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lavmajmun{
+    background-image: url(/assets/lmspojene1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1550px;
+}
+
+.form-input {
+    border: 0;
+    color:rgb(255, 255, 255);
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+::placeholder { 
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.btn {
+    width: 50%;
+    background: #C2914B;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    padding: 16px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background .3s;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    background: #C2914B;
+	transition: 0.5s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.4);
+    transform: translateY(-4px);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active{
+    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.938);
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #9C9D4E;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(0,0,0);
+}

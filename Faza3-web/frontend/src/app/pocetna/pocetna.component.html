@@ -1,0 +1,103 @@
+<div class="container-fluid pozadina">
+    <div class="row navbar sticky-top poz" style="padding: 0; margin:0">
+        <app-navbar style="padding: 0;"></app-navbar>
+
+        <div class="row navbar">
+            <div class="col-lg-2"></div>
+            <div class="col-sm-12 col-lg-8">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5 pocZiv">
+                        <a style="font-size: 24px; color: #D49E51; font-weight: bold;" routerLink="/pocetna">Početna</a>
+                        <a style="font-size: 20px;" routerLink="/zivotinje">Životinje</a>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 logo">
+                        <img src="assets/logo.png" width="155px" height="100px" routerLink="/pocetna" style="margin-top: -45px; margin-bottom: 5px;">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-5 pakDog">
+                        <a style="font-size: 20px;" routerLink="/paketi">Paketi</a>
+                        <a style="font-size: 20px;" routerLink="/dogadjaji">Događaji</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 crvenaPanda"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 lavmajmun">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-7 radnoVreme">
+                            <div class="row">
+                                <div class="col-sm-5" style="padding: 0; margin: 0">
+                                    <img src="assets/majmun.png" width="250px" height="180px" style="margin-top: -50px;">
+                                </div>
+                                <div class="col-sm-6" style="text-align: center; padding-top: 22px;">
+                                    <label style="font-size: 25px; font-weight: bold; color: #59300D;">Radno vreme</label>
+                                    <br>
+                                    <label style="font-size: 20px; font-weight: bold; color: #ffffff;">10:00 - 17:00</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-5 dogadjaji">
+                            <label style="font-size: 25px; font-weight: bold; color: #59300D;">Šta se dešava kod nas?</label> 
+                            <br>
+                            <a style="font-size: 20px; color: #59300D; font-style: italic; text-decoration: underline;" routerLink="/dogadjaji">Vidi događaje</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-lg-3"></div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4" style="text-align: center; padding: 0px;">
+                            <label style="font-size: 22px; font-weight: bold; color: #D49E51; margin-bottom: 10px;">Naše životinje</label> 
+                            <br>
+                            <label style="font-size: 15px; font-weight: bold; color: #ffffff;  margin-bottom: 15px;">U našem zoo vrtu <br>postoje razne životinje!</label>
+                            <button class="btn" (click)='sveZivotinje()'> 
+                                Vidi sve
+                            </button> 
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4" style="text-align: center; padding: 0px; ">
+                           <img src="assets/tigar.jpg" width="100%" height="200px">
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4" style="text-align: center;  padding: 0px;">
+                            <img src="assets/slon.jpg" width="100%" height="200px">
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4" style="text-align: center;  padding: 0px;">
+                            <img src="assets/majmuni.jpg" width="100%" height="280px">
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4" style="text-align: center;  padding: 0px;">
+                           <img src="assets/lija.jpg" width="100%" height="280px">
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4" style="text-align: center;  padding: 0px;">
+                            <img src="assets/merkat.jpg" width="100%" height="280px">
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

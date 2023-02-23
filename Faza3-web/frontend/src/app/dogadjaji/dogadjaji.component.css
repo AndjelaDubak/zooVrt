@@ -1,0 +1,115 @@
+.container-fluid{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.row{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.col-sm-12 {
+    margin: 0;
+    padding: 0;
+}
+
+.pozadina{
+    background-image: url(/assets/pozadina.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+}
+
+.poz {
+    background-image: url(/assets/pozadina.jpg);
+    background-size:cover;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(95,96,58,0.5);
+    margin: 0;
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pocZiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.pakDog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lavmajmun{
+    background-image: url(/assets/lmspojene1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1550px;
+}
+
+ngb-pagination ::ng-deep a {
+    color: black !important;
+}
+  
+ngb-pagination ::ng-deep .page-item.active .page-link {
+    border-color: #9C9D4E;
+    background-color: #9C9D4E;
+}
+
+ngb-pagination ::ng-deep .page-item.active .page-link:focus, .page-link:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.1rem #3b3c1d;
+}
+
+ngb-pagination ::ng-deep .page-link:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.1rem #3b3c1d;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #9C9D4E;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(0,0,0);
+}

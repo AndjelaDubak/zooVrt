@@ -1,0 +1,72 @@
+<div class="container-fluid pozadina">
+    <div class="row navbar sticky-top poz" style="padding: 0; margin:0">
+        <app-navbar style="padding: 0;"></app-navbar>
+
+        <div class="row navbar">
+            <div class="col-lg-2"></div>
+            <div class="col-sm-12 col-lg-8">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5 pocZiv">
+                        <a style="font-size: 20px;" routerLink="/pocetna">Početna</a>
+                        <a style="font-size: 24px; color: #D49E51; font-weight: bold;" routerLink="/zivotinje">Životinje</a>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 logo">
+                        <img src="assets/logo.png" width="155px" height="100px" routerLink="/pocetna" style="margin-top: -45px; margin-bottom: 5px;">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-5 pakDog">
+                        <a style="font-size: 20px;" routerLink="/paketi">Paketi</a>
+                        <a style="font-size: 20px;" routerLink="/dogadjaji">Događaji</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 lavmajmun">
+
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-lg-3"></div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="assets/{{zivotinja.slika}}" width="100%" height="600px">
+                            <div style="height: fit-content; background-color: rgba(156, 157, 78, 0.6); text-align: center; padding: 20px;">
+                                <label style="margin-bottom: 20px; font-size: 30px; color: #D49E51;">{{zivotinja.naziv}}</label> 
+                                <br>
+                                <label style="margin-bottom: 20px; font-size: 15px; color: #ffffff;">{{zivotinja.opis}}</label>
+                                <br>
+                                <label style="margin-bottom: 20px; font-size: 20px; color: #D49E51;">Komentari</label> 
+                                <br>
+                                <div *ngIf="nemaKomentara" style="text-align: center;">
+                                    <label style="color:black; font-size: 20px; margin-bottom: 20px;"> Nema komentara. </label> 
+                                </div>
+                                
+                                <div *ngIf="nemaKomentara == false">
+                                    <div style="height: fit-content; background-color: rgba(34, 34 , 34, 0.6); text-align: left; margin-left: 30px; margin-right: 30px; margin-bottom:10px; padding: 10px; color: #ffffff;" *ngFor="let kom of zivotinja.komentari">
+                                        <label style="font-weight: bold; margin-left: 20px;">{{kom.split(':')[0]}}</label> <br>
+                                        <label style="margin-left: 30px;">{{kom.split(':')[1]}}</label>
+                                    </div>
+                                </div>
+
+                                <div style="height: 65px; background-color: rgba(248, 245 , 229, 0.4); text-align: left; margin-left: 30px; margin-right: 30px; margin-bottom:10px; padding: 10px; color: #ffffff;">
+                                    <input type='text' placeholder="Ostavite vaš komentar..." class="form-input" [(ngModel)]='komentar' style="margin: 10px;">
+                                </div>
+
+                                <button class="btn" (click)="dodajKom()" style="margin-bottom: 10px;"> 
+                                    Dodaj komentar
+                                </button>
+                                <br>
+                                <label style="color: white;">&#8592;</label> <a routerLink="/zivotinje" style="font-size: 13px; text-decoration: underline;"> Vrati se nazad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

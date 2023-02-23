@@ -1,0 +1,11 @@
+<div class="row" style="margin-bottom: 30px;">
+    <div class="col-sm-12" style='text-align:right; margin: 0; padding: 0;'>
+        <div>
+            <a class="label" routerLink="/obavestenja" *ngIf="korisnik.tip =='posetilac'">Obaveštenja</a>
+            <a class="label" routerLink="/zahtevi" *ngIf="korisnik.tip =='zaposleni'">Zahtevi</a>
+            <a class="label" routerLink="/dodaj" *ngIf="korisnik.tip =='zaposleni'">Dodaj životinju</a>
+            <a class="label" routerLink="/profil">Moj profil</a>
+            <a class="label" routerLink="/" (click) = 'odjava()'>Odjavi se</a>
+        </div>
+    </div>
+</div>

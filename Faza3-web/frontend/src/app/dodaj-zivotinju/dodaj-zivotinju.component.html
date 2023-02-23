@@ -1,0 +1,37 @@
+<div class="container-fluid pozadina">
+    <div class="row main">
+        <div class="col-lg-3"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 prijava">
+            <div class="form-container">
+                <div class="form-content">
+                    <div class="login-form-header">
+                        <div class="logo">
+                            <a routerLink="/pocetna"><img src="assets/logo.png" width="160" height="110"></a>
+                        </div>
+                    </div>
+        
+                    <div class="form-body" style="text-align: center;">
+                        <label style="color:black; font-weight: bold; font-size: 25px; margin-bottom: 30px;"> Dodaj životinju</label> <br>
+                        <input type='text' placeholder="Naziv životinje" class="form-input" [(ngModel)]='naziv'>
+                        <input type="text" placeholder="Opis" class="form-inputL" [(ngModel)]='opis'>
+                        <br/>
+                        <input type="file" #Image (change)="fileChangeEvent($event)" class="form-choose" style="margin-top: 15px;">
+                        <br>
+                        <span class="greska">{{poruka}}</span> 
+                        <br>
+                        <button class="btn" (click)="dodaj(Image)"> 
+                            Dodaj
+                        </button>
+                        <br/>
+                        <span class="uspesno" *ngIf = 'uspesno'>Životinja uspešno dodata.</span>
+                        <br>
+                        <div style="margin-top: 10px;">
+                            <label style="color: rgb(0, 0, 0);">&#8592; &nbsp;</label> <a routerLink="/pocetna" style="font-size: 14px; text-decoration: underline; color: black;">Vrati se nazad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="col-lg-3"></div> 
+    </div>
+</div>

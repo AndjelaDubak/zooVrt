@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">pki</string>
+    <string name="reg"><u>Registrujte se ovde</u>.</string>
+    <string name="dogadjaji"><i><u>Vidi događaje</u></i></string>
+</resources>

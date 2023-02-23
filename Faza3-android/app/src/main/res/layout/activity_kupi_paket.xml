@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/pozadina"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shape"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="117dp"
+                android:layout_height="98dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/logo"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/tip">
+            </TextView>
+
+            <EditText
+                android:id="@+id/brLjudi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:hint="Broj ljudi(maksimalno 10)"
+                android:textColor="@color/grey_input"
+                android:textSize="15sp"></EditText>
+
+            <EditText
+                android:id="@+id/promoKod"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/grey_input"
+                android:textSize="15sp"
+                android:hint="Promo kod(opciono)"></EditText>
+
+            <TextView
+                android:id="@+id/puc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/dark_orange"
+                android:textSize="17dp"
+                android:text="Prikaži ukupnu cenu"
+                android:onClick="prikaziCenu"></TextView>
+
+            <TextView
+                android:id="@+id/cena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/dark_orange"
+                android:layout_marginBottom="12dp"
+                android:textSize="18dp"></TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetTop="0dp"
+                android:text="Kupi"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:backgroundTint="#5F603A"
+                android:onClick="kupi"></Button>
+
+            <TextView
+                android:id="@+id/poruka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/poruka"></TextView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

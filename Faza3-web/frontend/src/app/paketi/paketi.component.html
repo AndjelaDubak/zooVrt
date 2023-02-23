@@ -1,0 +1,97 @@
+<div class="container-fluid pozadina">
+    <div class="row navbar sticky-top poz" style="padding: 0; margin:0">
+        <app-navbar style="padding: 0;"></app-navbar>
+
+        <div class="row navbar">
+            <div class="col-lg-2"></div>
+            <div class="col-sm-12 col-lg-8">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5 pocZiv">
+                        <a style="font-size: 20px;" routerLink="/pocetna">Početna</a>
+                        <a style="font-size: 20px;" routerLink="/zivotinje" routerLink="/zivotinje">Životinje</a>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 logo">
+                        <img src="assets/logo.png" width="155px" height="100px" routerLink="/pocetna" style="margin-top: -45px; margin-bottom: 5px;">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-5 pakDog">
+                        <a style="font-size: 24px; color: #D49E51; font-weight: bold;" routerLink="/paketi">Paketi</a>
+                        <a style="font-size: 20px;" routerLink="/dogadjaji">Događaji</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 lavmajmun">
+
+            <div class="row" style="margin-top: 240px;">
+                <div class="col-lg-3"></div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6" style="margin-bottom: 50px;">
+                            <div class="image">
+                                <div class="overlay">550 din/o</div>
+                                <img src="assets/individualna.jpg" width="100%" height="230px">
+                            </div>
+                            <div style="height: 190px; background-color: rgba(156, 157, 78, 0.6); text-align: center; padding-top: 11px;">
+                                <label style="color: #D49E51; font-size: 20px; margin-bottom: 10px">Individualna ili obična grupna poseta</label>
+                                <label style="color: #ffffff; font-size: 12px; padding: 10px;">Ugrabite svoj dan i posetite zoo vrt Pandica, jedno od dobrih mesta za fizičku rekreaciju i mentalno opuštanje, u samom centru grada.</label>
+                                <button class="btn" (click)="kupiInd()" style="margin-bottom: 10px;"> 
+                                    Kupi
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6" style="margin-bottom: 50px;">
+                            <div class="image">
+                                <div class="overlay">500 din/o</div>
+                                <img src="assets/parovi.jpg" width="100%" height="230px">
+                            </div>
+                            <div style="height: 190px; background-color: rgba(156, 157, 78, 0.6); text-align: center; padding-top: 11px;">
+                                <label style="color: #D49E51; font-size: 20px; margin-bottom: 10px">Za parove</label>
+                                <label style="color: #ffffff; font-size: 12px; padding: 10px;">Upoznajte bolje svog partnera uz zoo vrt Pandica. Ovo je idealni trenutak da sa voljenom osobom uživate na otvorenom okruženi prirodnim ambijentom i zanimljivim životinjama.</label>
+                                <button class="btn" (click)="kupiPar()" style="margin-bottom: 10px;"> 
+                                    Kupi
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="image">
+                                <div class="overlay">400 din/o</div>
+                                <img src="assets/porodicni.jpg" width="100%" height="230px">
+                            </div>
+                            <div style="height: 190px; background-color: rgba(156, 157, 78, 0.6); text-align: center; padding-top: 11px;">
+                                <label style="color: #D49E51; font-size: 20px; margin-bottom: 10px">Porodični paket</label>
+                                <label style="color: #ffffff; font-size: 12px; padding: 10px;">Zoo vrt Pandica je definitivno mesto gde se cela porodica druži i zajedničkim osmehom prati sve trenutke i vratolomije naših životinja.</label>
+                                <button class="btn" (click)="kupiPorodica()" style="margin-bottom: 10px;"> 
+                                    Kupi
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="image">
+                                <div class="overlay">450 din/o</div>
+                                <img src="assets/kompanija.jpg" width="100%" height="230px">
+                            </div>
+                            <div style="height: 190px; background-color: rgba(156, 157, 78, 0.6); text-align: center; padding-top: 11px;">
+                                <label style="color: #D49E51; font-size: 20px; margin-bottom: 10px">Paket za kompanije</label>
+                                <label style="color: #ffffff; font-size: 12px; padding: 10px;">Od korporativnih proslava i prigodnih koktela, preko sastanaka i tim bildiniga – unesite dodir prirode i divljine u svoj naredni koroporativni događaj koji će se prepričavati.</label>
+                                <button class="btn" (click)="kupiKompanija()" style="margin-bottom: 10px;"> 
+                                    Kupi
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

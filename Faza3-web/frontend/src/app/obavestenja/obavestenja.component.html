@@ -1,0 +1,36 @@
+<div class="container-fluid pozadina">
+    <div class="row main">
+        <div class="col-lg-3"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 prijava">
+            <div class="form-container">
+                <div class="form-content">
+                    <div class="login-form-header">
+                        <div class="logo">
+                            <a routerLink="/pocetna"><img src="assets/logo.png" width="160" height="110"></a>
+                        </div>
+                    </div>
+        
+                    <div class="form-body">
+                        <div style="text-align: center;">
+                            <label style="color:black; font-weight: bold; font-size: 25px; margin-bottom: 20px;"> Obaveštenja </label> 
+                        </div>
+                        <br>
+                        <div *ngIf="nemaObavestenja" style="text-align: center;">
+                            <label style="color:black; font-size: 20px; margin-bottom: 20px;"> Nema novih obaveštenja. </label> 
+                        </div>
+
+                        <div *ngFor = 'let o of korisnik.obavestenja' style="margin-bottom: 20px; color: black; font-size: 18px;">
+                        {{o.opis}} <label style="margin-left: 30px;">{{o.datum}} {{o.vreme}}</label>
+                        </div>
+                        <br>
+
+                        <div style="text-align: center;">
+                            <label style="color: rgb(0, 0, 0);">&#8592; &nbsp;</label> <a routerLink="/pocetna" style="font-size: 14px; text-decoration: underline; color: black;">Vrati se nazad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="col-lg-3"></div> 
+    </div>
+</div>

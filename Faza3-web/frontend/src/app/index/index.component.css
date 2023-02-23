@@ -1,0 +1,95 @@
+.container-fluid{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.row{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.col-sm-12 {
+    margin:0%;
+    padding: 0%;
+}
+
+.pozadina{
+    background-image: url(/assets/pozadina.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+}
+
+.prijava{
+    display: flex;
+    justify-content: center;
+    padding: auto;
+}
+
+.form-container {
+    width: 30%;
+    margin-top: 7%;
+    min-width: fit-content;
+}
+
+.form-content {
+    background-color: rgba(255,255,255,0.6);
+    padding: 25px 25px;
+	border-radius: 8px;
+    padding-bottom: 50px;
+}
+
+.login-form-header {
+    text-align: center;
+    color: white;
+}
+
+.login-form-header img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-body{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    width: 100%;
+    background: #5F603A;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    padding: 16px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.btn:hover {
+    background: #9C9D4E;
+	transition: 0.5s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.4);
+    transform: translateY(-4px);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active{
+    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.938);
+}
+
